@@ -13,7 +13,9 @@
 <h2>First PHP Script</h2>
 <p>
     Some HTML code is included in this page <br/>
-    Hello <?php /* Some first name to introduce here */ ?> !
+    Hello <?php /* Some first name to introduce here */
+    echo "<strong>nickname</strong>";
+    ?> !
     Few tests here-below
 </p>
 
