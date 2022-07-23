@@ -21,6 +21,11 @@ echo 'user0[1] = ' . $user0[1] . '<br/>' . PHP_EOL;
 echo 'user0[2] = ' . $user0[2] . '<br/>' . PHP_EOL;
 echo 'user0[3] = ' . $user0[3] . '<br/>' . PHP_EOL;
 
+$user1 = ['Laure', 'Kibri', 'kibrila@somemail.com', 44];
+$user2 = ['Vincent', 'Larose', 'vinlarose@somemail.com', 27];
+$user3 = ['Anna', 'Quonda', 'qanna@somemail.com', 36];
+$userTable = [$user0, $user1, $user2, $user3];
+
 
 ?>
 
