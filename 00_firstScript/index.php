@@ -33,6 +33,8 @@
     echo "First PHP text written on " . date("d/m/Y h:i:s") . "<br/>";
     ?>
 </p>
+
+<a href="../index.php">index</a>
 </body>
 
 
