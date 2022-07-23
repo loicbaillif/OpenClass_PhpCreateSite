@@ -13,7 +13,7 @@
     <ul>
         <li><a href="./00_firstScript/index.php">Chapter 00: First Script</a></li>
         <li><a href="./01_variables/index.php">Chapter 01: Variables</a></li>
-        <li><a href="./02/index.php">Chapter 02:</a></li>
+        <li><a href="./02_conditions/index.php">Chapter 02: Conditions</a></li>
         <li><a href="./03/index.php">Chapter 03:</a></li>
         <li><a href="./04/index.php">Chapter 04:</a></li>
         <li><a href="./05/index.php">Chapter 05:</a></li>
