@@ -33,11 +33,24 @@ if ($userSatisfied == "Yes") {
 }
 
 $recipePublished = true;
-$isOwner = true;
-if ($recipePublished && $isOwner)
+$isOwner = false;
+$isAdmin = false;
 
+if (($recipePublished && $isOwner) || $isAdmin) {
+    echo 'You can edit this recipe.<br/>' . PHP_EOL;
+} else {
+    echo 'You are not allowed to edit this recipe.<br/>' . PHP_EOL;
+}
+
+$isVeggie = true;
 
 ?>
+
+<?php if ($isVeggie): ?>
+    <h3>List of veggie recipes</h3>
+<?php else: ?>
+    <h3>List of meat BBQ</h3>
+<?php endif; ?>
 
 </p>
 
