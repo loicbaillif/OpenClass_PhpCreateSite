@@ -45,6 +45,7 @@ if (($recipePublished && $isOwner) || $isAdmin) {
 $isVeggie = true;
 
 ?>
+</p>
 
 <?php if ($isVeggie): ?>
     <h3>List of veggie recipes</h3>
@@ -52,8 +53,45 @@ $isVeggie = true;
     <h3>List of meat BBQ</h3>
 <?php endif; ?>
 
-</p>
 
+<h2>switch Condition (a.k.a. jam)</h2>
+<p>
+<?php
+$nbIngredients = "bob";
+
+switch ($nbIngredients)
+{
+    case 0:
+        echo "Come on ... be serious.";
+        break;
+
+    case 1:
+        echo "1 ingredient only? meringue maybe ...";
+        break;
+
+    case 2:
+        echo "We can prepare an ice-cream with 2 ingredients.";
+        break;
+
+    case 3:
+        echo "Pancakes party!";
+        break;
+
+    case 4:
+        echo "Classic King, chocolate cake. Four ingredients for happiness.";
+        break;
+
+    case 5:
+        echo "Let's bake a Pavlova.";
+        break;
+
+    default:
+        echo "You can be imaginative with all those ingredients.";
+}
+
+
+?>
+</p>
 
 
 <hr/>
