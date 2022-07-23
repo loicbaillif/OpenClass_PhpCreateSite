@@ -14,7 +14,7 @@
 <p>
     Some HTML code is included in this page <br/>
     Hello <?php /* Some first name to introduce here */
-    echo "<strong>nickname</strong>";
+    echo "<strong>nickname</strong><br />";
     ?> !
     Few tests here-below
 </p>
@@ -23,11 +23,16 @@
     <li style="color: blue;">Blue text</li>
     <li style="color: red;">Red text</li>
     <li style="color: green;">Green text</li>
+    <?php echo "<li style=\"color: lime;\">PHP text</li>" ?>
 </ul>
 
-<?php
-// Again and again PHP Code
-echo "First PHP text";
-?>
+<p>
+    <?php
+    // Again and again PHP Code
+    echo "First PHP text written on " . date("d/m/Y h:i:s") . "<br/>";
+    ?>
+</p>
 </body>
+
+
 </html>
