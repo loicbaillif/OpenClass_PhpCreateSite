@@ -30,12 +30,33 @@ $isAuthor = false; // bool
 $isAdmin = true; // bool
 $noValue = NULL; // NULL
 
-echo "<h2>Display Variables</h2>";
+echo "<h2>Display Variables</h2>\n<p>\n";
 // 2) Display Variables
-echo $userName . ": " . $userAge . " years old.";
-
-
+echo $userName . ': ' . $userAge . ' years old.<br />'; // Concatenate with ' '
+echo "$userName, we registered your email address: $userEmail"; // and with " "
+echo "</p>";
 ?>
+
+<h2>Basic maths operations</h2>
+<ul>
+    <?php
+    $number1 = 18;
+    $number2 = 6;
+    echo '<li>' . $number1 . ' + ' . $number2 . ' = ';
+    echo $number1 + $number2 . '</li>';
+    echo '<li>' . $number1 . ' - ' . $number2 . ' = ';
+    echo $number1 - $number2 . '</li>';
+    echo '<li>' . $number1 . ' * ' . $number2 . ' = ';
+    echo $number1 * $number2 . '</li>';
+    echo '<li>' . $number1 . ' / ' . $number2 . ' = ';
+    echo $number1 / $number2 . '</li>';
+    echo '<li>' . $number1 . ' % ' . $number2 . ' = ';
+    echo $number1 % $number2 . '</li>';
+
+
+    ?>
+</ul>
+
 <hr/>
 <a href="../index.php">index</a>
 </body>
