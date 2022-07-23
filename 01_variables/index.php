@@ -21,7 +21,18 @@
     <li>Nothing: null</li>
 </ul>
 <?php
-$userAge = 17; // camelCase recommended
+// 1) Set Variables
+$userAge = 17; // camelCase recommended, int
+$userName = "John Doe"; // string
+$userEmail = "john.doe@somemail.com"; // string
+$temperature = 37.2; // float
+$isAuthor = false; // bool
+$isAdmin = true; // bool
+$noValue = NULL; // NULL
+
+echo "<h2>Display Variables</h2>";
+// 2) Display Variables
+echo $userName . ": " . $userAge . " years old.";
 
 
 ?>
