@@ -94,6 +94,14 @@ switch ($nbIngredients)
 </p>
 
 
+<h2>Ternary Operator</h2>
+<?php
+$userAge = 16;
+echo 'You are ... ' . ($userAge >= 18 ? 'Adult' : 'Minor');
+
+?>
+
+
 <hr/>
 <a href="../index.php">index</a>
 </body>
