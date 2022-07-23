@@ -47,11 +47,14 @@ while (!$isValid) {
     }
 
 }
-echo 'You have enough ingredients, perfect!' . PHP_EOL;
-
+echo 'You have enough ingredients, perfect!<br />' . PHP_EOL;
+$nbUsers = sizeof($userTable);
+echo $nbUsers;
 ?>
-
 </p>
+
+<hr class="subchapter"/>
+<h2>For loop</h2>
 
 <hr/>
 <a href="../index.php">index</a>
