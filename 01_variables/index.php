@@ -12,8 +12,19 @@
 <body>
 <h1>PHP Variables</h1>
 <hr />
+<h2>Five different variables types</h2>
+<ul>
+    <li>Strings: string</li>
+    <li>Integers: int</li>
+    <li>Floating numbers: float</li>
+    <li>Boolean: bool</li>
+    <li>Nothing: null</li>
+</ul>
+<?php
+$userAge = 17; // camelCase recommended
 
 
+?>
 <hr/>
 <a href="../index.php">index</a>
 </body>
