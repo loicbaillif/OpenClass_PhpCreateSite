@@ -14,7 +14,15 @@
 <hr/>
 <h2>Tables</h2>
 
+<?php
+$user0 = ['Michael', 'Andreu', 'michandreux@somemail.com', 31];
+echo 'user0[0] = ' . $user0[0] . '<br/>' . PHP_EOL;
+echo 'user0[1] = ' . $user0[1] . '<br/>' . PHP_EOL;
+echo 'user0[2] = ' . $user0[2] . '<br/>' . PHP_EOL;
+echo 'user0[3] = ' . $user0[3] . '<br/>' . PHP_EOL;
 
+
+?>
 
 <hr/>
 <a href="../index.php">index</a>
