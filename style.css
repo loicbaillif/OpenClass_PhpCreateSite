@@ -1,5 +1,22 @@
+/* Blocks */
 body {
     background-color: #778899;
+}
+
+hr {
+    border-width: 3px;
+    color: #fff8dc;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Fonts */
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: #bbddcc;
 }
 
 h1 {

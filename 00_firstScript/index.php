@@ -11,6 +11,7 @@
 
 <body>
 <h1 <?php // Some code to attribute dynamically a class ?>>OpenClassrooms</h1>
+<hr />
 <h2>First PHP Script</h2>
 <p>
     Some HTML code is included in this page <br/>
@@ -34,6 +35,7 @@
     ?>
 </p>
 
+<hr />
 <a href="../index.php">index</a>
 </body>
 
