@@ -11,6 +11,13 @@ hr {
     margin-right: 5%;
 }
 
+hr.subchapter {
+    border-width: 1px;
+    color: #d1eeed;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 /* Fonts */
 a:link {
     color: black;
