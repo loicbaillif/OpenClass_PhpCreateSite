@@ -13,7 +13,7 @@
 <h1>Tables and Loops</h1>
 <hr/>
 <h2>Tables</h2>
-
+<p>
 <?php
 $user0 = ['Michael', 'Andreu', 'michandreux@somemail.com', 31];
 echo 'user0[0] = ' . $user0[0] . '<br/>' . PHP_EOL;
@@ -28,6 +28,30 @@ $userTable = [$user0, $user1, $user2, $user3];
 
 
 ?>
+</p>
+<hr class="subchapter"/>
+
+<h2>While loop</h2>
+<p>
+<?php
+$isValid = false;
+$nbIngredients = 0;
+while (!$isValid) {
+    echo 'You have ' . $nbIngredients . ' ingredients.<br/>' . PHP_EOL;
+    if ($nbIngredients < 5) {
+        // Very poor code ... but for training purpose ?>
+        Not enough ingredients, add one please.<br />
+        <?php
+        $nbIngredients++;
+        $isValid = $nbIngredients >= 5;
+    }
+
+}
+echo 'You have enough ingredients, perfect!' . PHP_EOL;
+
+?>
+
+</p>
 
 <hr/>
 <a href="../index.php">index</a>
