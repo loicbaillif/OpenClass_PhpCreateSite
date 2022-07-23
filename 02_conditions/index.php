@@ -16,21 +16,25 @@
 <p>
 
 <?php
-$is_enabled = true;
-if ($is_enabled) {
+$isEnabled = true;
+if ($isEnabled) {
     echo 'You are authorized to access this website.✅<br/>' . PHP_EOL;
 } else {
     echo 'Access denied. ❌<br/>' . PHP_EOL;
 }
 
-$user_satisfied = "Maybe";
-if ($user_satisfied == "Yes") {
+$userSatisfied = "Maybe";
+if ($userSatisfied == "Yes") {
     echo 'I\'m glad you are a satisfied user.<br />' . PHP_EOL;
-} elseif ($user_satisfied == "No") {
+} elseif ($userSatisfied == "No") {
     echo 'I will do my best to satisfy you in the future.<br/>' . PHP_EOL;
 } else {
     echo 'Choosing means eliminating<br/>' . PHP_EOL;
 }
+
+$recipePublished = true;
+$isOwner = true;
+if ($recipePublished && $isOwner)
 
 
 ?>
