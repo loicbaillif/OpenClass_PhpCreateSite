@@ -25,6 +25,7 @@ $user1 = ['Laure', 'Kibri', 'kibrila@somemail.com', 44];
 $user2 = ['Vincent', 'Larose', 'vinlarose@somemail.com', 27];
 $user3 = ['Anna', 'Quonda', 'qanna@somemail.com', 36];
 $userTable = [$user0, $user1, $user2, $user3];
+$userStructure = ['First Name: ', 'Last Name: ', 'e-mail: ', 'Age: '];
 
 
 ?>
@@ -55,6 +56,26 @@ echo $nbUsers;
 
 <hr class="subchapter"/>
 <h2>For loop</h2>
+
+<?php
+for ($cpt = 0; $cpt < $nbUsers; $cpt++):
+?>
+<h3>User <?php echo $cpt; ?>:</h3>
+<ul>
+    <?php
+    for ($userData = 0; $userData < sizeof($userStructure); $userData++):
+    ?>
+    <li>
+        <?php
+        echo $userStructure[$userData] . $userTable[$cpt][$userData];
+        ?>
+    </li>
+    <?php endfor; ?>
+
+</ul>
+<?php endfor; ?>
+
+
 
 <hr/>
 <a href="../index.php">index</a>
