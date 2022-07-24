@@ -137,13 +137,17 @@ $recipes3 = [
 <?php foreach ($recipes3 as $recipes3Elt) { ?>
 <ul>
     <?php foreach ($recipes3Elt as $eltProperty => $eltValue) { ?>
-        <li><?php echo $eltProperty ?> => <?php echo $eltValue ?></li>
+        <li>[<?php echo $eltProperty ?>] => <?php echo $eltValue ?></li>
     <?php } ?>
 </ul>
 <?php } ?>
 
+<h3>print_r() to quickly display an array</h3>
+<pre>
+    <?php print_r($recipes3); ?>
+</pre>
 
-?>
+
 
 
 <hr/>
