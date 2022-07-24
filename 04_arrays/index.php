@@ -12,6 +12,16 @@
 <body>
 <h1>Arrays</h1>
 <hr/>
+<h2>Indexed Arrays</h2>
+<?php
+// First method:
+$recipes1 = ['pudding', 'pizza', 'tika masala', 'pancake', 'gazpacho'];
+// Second method:
+$recipes2 = array('ice cream', 'carrot cake', 'custard', 'cheesecake');
+// Adding elements:
+$recipes2[] = 'Caesar Salad';
+
+?>
 
 
 
