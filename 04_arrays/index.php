@@ -89,6 +89,63 @@ $recipes = [
     <?php endfor; ?>
 </ul>
 
+
+<h3>foreach (loop)</h3>
+<p>Displaying recipes array using for loop:</p>
+<ul>
+<?php foreach ($recipes as $recipesElt) { ?>
+    <li><?php print_r($recipesElt); ?></li>
+<?php } ?>
+</ul>
+
+<?php
+$recipes3 = [
+    [
+        'title' => 'pudding',
+        'recipe' => '[...]',
+        'authorEmail' => 'user323@somemail.com',
+        'isEnabled' => true,
+    ],
+    [
+        'title' => 'pizza',
+        'recipe' => '[...]',
+        'authorEmail' => 'vivitalia@somemail.com',
+        'isEnabled' => false,
+    ],
+    [
+        'title' => 'tika masala',
+        'recipe' => '[...]',
+        'authorEmail' => 'userfromuk@somemail.com',
+        'isEnabled' => true,
+    ],
+    [
+        'title' => 'pancake',
+        'recipe' => '[...]',
+        'authorEmail' => 'usadelicacies@somemail.com',
+        'isEnabled' => false,
+    ],
+    [
+        'title' => 'gazpacho',
+        'recipe' => '[...]',
+        'authorEmail' => 'holaespana@somemail.com',
+        'isEnabled' => true,
+    ],
+];
+?>
+<p>Second foreach example, using array of associative arrays</p>
+
+<?php foreach ($recipes3 as $recipes3Elt) { ?>
+<ul>
+    <?php foreach ($recipes3Elt as $eltProperty => $eltValue) { ?>
+        <li><?php echo $eltProperty ?> => <?php echo $eltValue ?></li>
+    <?php } ?>
+</ul>
+<?php } ?>
+
+
+?>
+
+
 <hr/>
 <a href="../index.php">index</a>
 </body>
