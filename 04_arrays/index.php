@@ -38,6 +38,26 @@ $recipes2[] = 'Caesar Salad';
 </ul>
 
 
+<hr class="subchapter"/>
+<h2>Associative Arrays</h2>
+
+<?php
+$recipe = [
+    'title' => 'French cassoulet',
+    'recipe' => 'Step 1: buy sausages<br/>Step 2: bake beans ...',
+    'author' => 'johndoe@somemail.com',
+    'enabled' => true,
+];
+
+?>
+<p>This time, key will be explicit, and can be a string<br />
+    Displaying an associative array values:</p>
+<ul>
+    <li>recipe['title'] = <?php echo $recipe['title'] . PHP_EOL; ?></li>
+    <li>recipe['recipe'] = <?php echo $recipe['recipe'] . PHP_EOL; ?></li>
+    <li>recipe['author'] = <?php echo $recipe['author'] . PHP_EOL; ?></li>
+    <li>recipe['enabled'] = <?php echo $recipe['enabled'] . PHP_EOL; ?></li>
+</ul>
 
 <hr/>
 <a href="../index.php">index</a>
