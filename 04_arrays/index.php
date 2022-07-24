@@ -59,6 +59,36 @@ $recipe = [
     <li>recipe['enabled'] = <?php echo $recipe['enabled'] . PHP_EOL; ?></li>
 </ul>
 
+
+<hr class="subchapter"/>
+<h2>Going through arrays</h2>
+<p>Three possible methods:</p>
+<ol>
+    <li>for (loop)</li>
+    <li>foreach (loop)</li>
+    <li>print_r (method, mainly for debugging)</li>
+</ol>
+
+<?php
+$recipes = [
+    ['pudding', '[...]', 'user323@somemail.com', true],
+    ['pizza', '[...]', 'vivitalia@somemail.com', false],
+    ['tika masala', '[...]', 'userfromuk@somemail.com', true],
+    ['pancake', '[...]', 'usadelicacies@somemail.com', false],
+    ['gazpacho', '[...]', 'holaespana@somemail.com', true]
+];
+
+
+?>
+
+<h3>for (loop)</h3>
+<p>Displaying recipes array using for loop:</p>
+<ul>
+    <?php for($cpt = 0; $cpt < sizeof($recipes1); $cpt++): ?>
+    <li># <?php echo $recipes[$cpt][0]; ?></li>
+    <?php endfor; ?>
+</ul>
+
 <hr/>
 <a href="../index.php">index</a>
 </body>
