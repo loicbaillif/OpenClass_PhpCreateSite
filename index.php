@@ -15,7 +15,7 @@
         <li><a href="./01_variables/index.php">Chapter 01: Variables</a></li>
         <li><a href="./02_conditions/index.php">Chapter 02: Conditions</a></li>
         <li><a href="./03_tablesLoops/index.php">Chapter 03: Tables and Loops</a></li>
-        <li><a href="./04/index.php">Chapter 04:</a></li>
+        <li><a href="./04_arrays/index.php">Chapter 04: Arrays</a></li>
         <li><a href="./05/index.php">Chapter 05:</a></li>
         <li><a href="./06/index.php">Chapter 06:</a></li>
         <li><a href="./07/index.php">Chapter 07:</a></li>
