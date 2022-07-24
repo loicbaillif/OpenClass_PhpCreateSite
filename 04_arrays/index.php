@@ -21,8 +21,21 @@ $recipes2 = array('ice cream', 'carrot cake', 'custard', 'cheesecake');
 // Adding elements:
 $recipes2[] = 'Caesar Salad';
 
+// Displaying elements:
 ?>
+<h3>Recipes 1</h3>
+<ul>
+<?php for ($i = 0; $i < sizeof($recipes1); $i++): ?>
+<li><?php echo $recipes1[$i]; ?></li>
+<?php endfor; ?>
+</ul>
 
+<h3>Recipes 2</h3>
+<ul>
+<?php for ($cpt = 0; $cpt < sizeof($recipes2); $cpt++): ?>
+<li><?php echo $recipes2[$cpt]; ?></li>
+<?php endfor; ?>
+</ul>
 
 
 
