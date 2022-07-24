@@ -64,9 +64,9 @@ $recipe = [
 <h2>Going through arrays</h2>
 <p>Three possible methods:</p>
 <ol>
-    <li>for (loop)</li>
-    <li>foreach (loop)</li>
-    <li>print_r (method, mainly for debugging)</li>
+    <li><span class="code">for</span> (loop)</li>
+    <li><span class="code">foreach</span> (loop)</li>
+    <li><span class="code">print_r</span> (method, mainly for debugging)</li>
 </ol>
 
 <?php
@@ -147,6 +147,16 @@ $recipes3 = [
     <?php print_r($recipes3); ?>
 </pre>
 
+<hr class="subchapter"/>
+<h2>Search in an array</h2>
+<p>Three functions exist</p>
+<ol>
+    <li><span class="code">array_key_exists()</span> to check if a key exists in an array</li>
+    <li><span class="code">in_array()</span> to check if a value exist in an array</li>
+    <li><span class="code">array_search()</span> to get key from a value in an array</li>
+</ol>
+
+<h3>array_key_exists()</h3>
 
 
 
