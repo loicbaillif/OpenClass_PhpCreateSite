@@ -157,8 +157,21 @@ $recipes3 = [
 </ol>
 
 <h3>array_key_exists()</h3>
+<p>Requires two arguments: the key we look for, the array in which looking for it.<br/>
+<span class="code">array_key_exists('keyWeWant', $array)</span></p>
+<?php
+$recipes4 = [
+    'title' => 'Caesar Salad',
+    'recipe' => '1) Cut the salad<br/>2) prepare the sauce<br/>3) ...',
+    'author' => 'juliusc@somemail.com',
+];
+if (array_key_exists('author', $recipes4)) {
+    echo 'This is not an anonymous recipe.<br/>' . PHP_EOL;
+} else {
+    echo 'No clue who posted this recipe...<br/>' . PHP_EOL;
+}
 
-
+?>
 
 <hr/>
 <a href="../index.php">index</a>
