@@ -157,7 +157,11 @@ $recipes3 = [
 </ol>
 
 <h3>array_key_exists()</h3>
-<p>Requires two arguments: the key we look for, the array in which looking for it.<br/>
+<p>Requires two arguments:
+<ol>
+    <li>The key we look for.</li>
+    <li>The array in which looking for it.</li>
+</ol>
 <span class="code">array_key_exists('keyWeWant', $array)</span></p>
 <?php
 $recipes4 = [
@@ -165,13 +169,22 @@ $recipes4 = [
     'recipe' => '1) Cut the salad<br/>2) prepare the sauce<br/>3) ...',
     'author' => 'juliusc@somemail.com',
 ];
-if (array_key_exists('author', $recipes4)) {
-    echo 'This is not an anonymous recipe.<br/>' . PHP_EOL;
+if (! (array_key_exists('author', $recipes4))) {
+    echo 'We don\'t record the authors.<br/>' . PHP_EOL;
+} elseif (array_key_exists('title', $recipes4)) {
+    echo 'We record both authors and titles for recipes.<br/>';
+    echo PHP_EOL;
 } else {
-    echo 'No clue who posted this recipe...<br/>' . PHP_EOL;
+    echo 'This is not an anonymous recipe.<br/>' . PHP_EOL;
 }
-
 ?>
+
+<h3>in_array()</h3>
+<p>Requires two arguments:
+<ol>
+    <li>The value we look for.</li>
+    <li>The array in which looking for it.</li>
+</ol></p>
 
 <hr/>
 <a href="../index.php">index</a>
