@@ -215,6 +215,18 @@ echo 'Red is ' . (in_array('red', $rainbow) ? '' : 'not ')  . 'in rainbow';
 echo in_array('red', $rainbow)
     ? ', and located at position ' . (array_search('red', $rainbow) + 1)
     : '';
+echo '.' . '<br/>' . PHP_EOL;
+
+echo 'Blue is ' . (in_array('blue', $rainbow) ? '' : 'not ')  . 'in rainbow';
+echo in_array('blue', $rainbow)
+    ? ', and located at position ' . (array_search('blue', $rainbow) + 1)
+    : '';
+echo '.' . '<br/>' . PHP_EOL;
+
+echo 'Pink is ' . (in_array('pink', $rainbow) ? '' : 'not ')  . 'in rainbow';
+echo in_array('pink', $rainbow)
+    ? ', and located at position ' . (array_search('pink', $rainbow) + 1)
+    : '';
 echo '.' . PHP_EOL . '</p>';
 ?>
 
