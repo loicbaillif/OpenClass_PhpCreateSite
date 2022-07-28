@@ -162,7 +162,8 @@ $recipes3 = [
     <li>The key we look for.</li>
     <li>The array in which looking for it.</li>
 </ol>
-<span class="code">array_key_exists('keyWeWant', $array)</span></p>
+<span class="code">array_key_exists('keyWeWant', $array)</span><br/>
+It will return a boolean.<br/>
 <?php
 $recipes4 = [
     'title' => 'Caesar Salad',
@@ -178,13 +179,30 @@ if (! (array_key_exists('author', $recipes4))) {
     echo 'This is not an anonymous recipe.<br/>' . PHP_EOL;
 }
 ?>
+</p>
 
 <h3>in_array()</h3>
-<p>Requires two arguments:
+<p>Similar to array_key_exists, but for values. Requires two arguments:
 <ol>
     <li>The value we look for.</li>
     <li>The array in which looking for it.</li>
-</ol></p>
+</ol>
+<span class="code">in_array('valueWeWant', $array)</span><br/>
+It will return a boolean. <br/>
+<?php
+if (in_array('juliusc@somemail.com', $recipes4)) {
+    echo 'Julius Caesar sent us this old recipe.<br/>' . PHP_EOL;
+} else {
+    echo 'Our service is not that old...<br/>' . PHP_EOL;
+}
+if (in_array('cleopatra@somemail.com', $recipes4)) {
+    echo 'Cleopatra exotic dishes are the best.<br/>' . PHP_EOL;
+} else {
+    echo 'We are younger than the pyramids.<br/>' . PHP_EOL;
+}
+
+?>
+</p>
 
 <hr/>
 <a href="../index.php">index</a>
