@@ -230,6 +230,43 @@ echo in_array('pink', $rainbow)
 echo '.' . PHP_EOL . '</p>';
 ?>
 
+<hr class="subchapter"/>
+
+<h2>Display recipes (V2)</h2>
+<?php
+$recipes5 = [
+    [
+          'title' => 'Fish and Chips',
+          'recipe' => 'Start with fresh fish ...',
+          'author' => 'Gordon Ramsay',
+          'is_enabled' => true,
+    ],
+    [
+        'title' => 'Cheesecake',
+        'recipe' => 'To be done with Philadelphia cheese, nothing else',
+        'author' => 'Starbucks',
+        'is_enabled' => false,
+    ],
+    [
+        'title' => 'Pizza',
+        'recipe' => 'Tomato sauce, mozzarella, basilica. The most basic.',
+        'author' => 'Super Mario',
+        'is_enabled' => true,
+    ],
+];
+?>
+<h3>Displaying recipes</h3>
+<?php foreach ($recipes5 as $recipeTemp5) : ?>
+<?php if (array_key_exists('is_enabled', $recipeTemp5)
+    && $recipeTemp5['is_enabled']) : ?>
+<article>
+    <h4><?php echo $recipeTemp5['title']; ?></h4>
+    <div><?php echo $recipeTemp5['recipe']; ?></div>
+    <i><?php echo 'By ' . $recipeTemp5['author']; ?></i>
+</article>
+<?php endif; ?>
+<?php endforeach; ?>
+
 
 <hr/>
 <a href="../index.php">index</a>
