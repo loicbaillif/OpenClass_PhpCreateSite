@@ -157,13 +157,15 @@ $recipes3 = [
 </ol>
 
 <h3>array_key_exists()</h3>
-<p>Requires two arguments:
+<p>Requires two arguments:</p>
 <ol>
     <li>The key we look for.</li>
     <li>The array in which looking for it.</li>
 </ol>
+<p>
 <span class="code">array_key_exists('keyWeWant', $array)</span><br/>
-It will return a boolean.<br/>
+It will return a boolean.
+</p>
 <?php
 $recipes4 = [
     'title' => 'Caesar Salad',
@@ -171,38 +173,38 @@ $recipes4 = [
     'author' => 'juliusc@somemail.com',
 ];
 if (! (array_key_exists('author', $recipes4))) {
-    echo 'We don\'t record the authors.<br/>' . PHP_EOL;
+    echo '<p>We don\'t record the authors.</p>' . PHP_EOL;
 } elseif (array_key_exists('title', $recipes4)) {
-    echo 'We record both authors and titles for recipes.<br/>';
+    echo '<p>We record both authors and titles for recipes.</p>';
     echo PHP_EOL;
 } else {
-    echo 'This is not an anonymous recipe.<br/>' . PHP_EOL;
+    echo '<p>This is not an anonymous recipe.</p>' . PHP_EOL;
 }
 ?>
-</p>
 
 <h3>in_array()</h3>
-<p>Similar to array_key_exists, but for values. Requires two arguments:
+<p>Similar to array_key_exists, but for values. Requires two arguments:</p>
 <ol>
     <li>The value we look for.</li>
     <li>The array in which looking for it.</li>
 </ol>
+<p>
 <span class="code">in_array('valueWeWant', $array)</span><br/>
-It will return a boolean. <br/>
+It will return a boolean.
+</p>
 <?php
 if (in_array('juliusc@somemail.com', $recipes4)) {
-    echo 'Julius Caesar sent us this old recipe.<br/>' . PHP_EOL;
+    echo '<p>Julius Caesar sent us this old recipe.</p>' . PHP_EOL;
 } else {
-    echo 'Our service is not that old...<br/>' . PHP_EOL;
+    echo '<p>Our service is not that old...</p>' . PHP_EOL;
 }
 if (in_array('cleopatra@somemail.com', $recipes4)) {
-    echo 'Cleopatra exotic dishes are the best.<br/>' . PHP_EOL;
+    echo '<p>Cleopatra exotic dishes are the best.</p>' . PHP_EOL;
 } else {
-    echo 'We are younger than the pyramids.<br/>' . PHP_EOL;
+    echo '<p>We are younger than the pyramids.</p>' . PHP_EOL;
 }
 
 ?>
-</p>
 
 <hr/>
 <a href="../index.php">index</a>
