@@ -203,8 +203,21 @@ if (in_array('cleopatra@somemail.com', $recipes4)) {
 } else {
     echo '<p>We are younger than the pyramids.</p>' . PHP_EOL;
 }
-
 ?>
+
+<h3>array_search()</h3>
+<p>Similar to in_array(), but will return the needle index if found
+or false if not found.</p>
+<?php
+$rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+echo '<p>';
+echo 'Red is ' . (in_array('red', $rainbow) ? '' : 'not ')  . 'in rainbow';
+echo in_array('red', $rainbow)
+    ? ', and located at position ' . (array_search('red', $rainbow) + 1)
+    : '';
+echo '.' . PHP_EOL . '</p>';
+?>
+
 
 <hr/>
 <a href="../index.php">index</a>
