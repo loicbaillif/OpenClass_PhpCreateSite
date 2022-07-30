@@ -56,8 +56,7 @@
 
 <hr class="lv3"/>
 <h3>str_replace(): replace all occurrences of a string by another</h3>
-<p>
-Requires 3 arguments:
+<p>Requires 3 arguments:</p>
 <ol>
     <li>The string we are looking for</li>
     <li>The string which will replace 1</li>
@@ -65,12 +64,11 @@ Requires 3 arguments:
 </ol>
 <span class="code">str_replace(" ", "_", 'My taylor is rich');</span><br/>
 ==> <?php echo str_replace(" ", "_", $testString); ?>
-</p>
 
 <hr class="lv3"/>
 <h3>sprintf(): format a string</h3>
 <p>
-Similar to java printf() function; <br/>
+    Similar to java printf() function; </p>
     <ul>
     <?php
     $stringToFormat = 'We have %d %s in the %s';
@@ -89,11 +87,18 @@ Similar to java printf() function; <br/>
                 $roomListing[2]);
         ?>
     <?php endforeach; ?>
-
 </ul>
-</p>
 
-
+<hr class="lv3"/>
+<h3>date(): Work with date and time</h3>
+<p>This function may take a huge variety of arguments. The most commons:</p>
+    <ul>
+    <li><span class="code">Y</span>: year --> <?php echo date('Y'); ?></li>
+    <li><span class="code">m</span>: month --> <?php echo date('m'); ?></li>
+    <li><span class="code">d</span>: day --> <?php echo date('d'); ?></li>
+    <li><span class="code">H</span>: hour --> <?php echo date('H'); ?></li>
+    <li><span class="code">i</span>: minute --> <?php echo date('i'); ?></li>
+</ul>
 
 <hr/>
 <a href="../index.php">index</a>
