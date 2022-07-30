@@ -127,13 +127,13 @@ $recipes = [
     [
         'title' => 'pancake',
         'recipe' => 'For top class breakfast. Flour, eggs, milk',
-        'authorEmail' => 'usadelicacies@somemail.com',
+        'authorEmail' => 'userfromuk@somemail.com',
         'isEnabled' => false,
     ],
     [
         'title' => 'gazpacho',
         'recipe' => 'All you need is tomatoes, olive oil, cucumber.',
-        'authorEmail' => 'holaespana@somemail.com',
+        'authorEmail' => 'user323@somemail.com',
         'isEnabled' => true,
     ],
 ];
@@ -183,6 +183,52 @@ echo '</pre>';
 
 
 ?>
+
+<hr class="lv3"/>
+<h3>Third example: Display name</h3>
+<?php
+$users = [
+    [
+        'firstName' => 'Rémi',
+        'lastName' => 'Fasola',
+        'eMail' => 'user323@somemail.com',
+        'age' => 42,
+    ],
+    [
+        'firstName' => 'Clive',
+        'lastName' => 'Brown',
+        'eMail' => 'userfromuk@somemail.com',
+        'age' => 42,
+    ],
+    [
+        'firstName' => 'Carla',
+        'lastName' => 'Pizza',
+        'eMail' => 'vivitalia@somemail.com',
+        'age' => 42,
+    ],
+];
+
+function displayAuthor(string $authorEmail, array $users) : string
+{
+    $firstName = 'Unknown';
+    $lastName = 'User';
+    $age = 0;
+    foreach ($users as $user)
+        {
+            if ($user['eMail'] == $authorEmail) {
+                $firstName = $user['firstName'];
+                $lastName = $user['lastName'];
+                $age = $user['age'];
+            }
+        }
+    return $firstName . ' ' . $lastName . ' (' . $age . ' years old)';
+}
+
+foreach (getValidRecipes($recipes) as $recipe) :
+?>
+<h4><?php echo $recipe['title']; ?></h4>
+<em>Par <?php echo displayAuthor($recipe['authorEmail'], $users); ?></em>
+<?php endforeach; ?>
 
 
 
