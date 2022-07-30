@@ -13,6 +13,12 @@
 <h1>Functions</h1>
 <hr/>
 
+<h2>Call function</h2>
+<p class="code">
+    someFunction(); // will call a function <br/>
+    someFunction($age); // will call a function, giving it parameter $age <br/>
+</p>
+
 
 
 <hr/>
