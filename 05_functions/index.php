@@ -159,6 +159,34 @@ foreach ($recipes as $item)
 echo '</ul>';
 ?>
 
+<hr class="lv3"/>
+<h3>Second example: get array of valid recipes only</h3>
+<?php
+function getValidRecipes(array $recipe) : array
+{
+    $validRecipe = [];
+    foreach ($recipe as $item)
+    {
+        if (isValidRecipe($item)) {
+            $validRecipe[] = $item;
+        }
+    }
+    echo 'We have ' . sizeof($validRecipe) . ' valid recipes'; // debug
+    return $validRecipe;
+}
+
+// use it:
+$validRecipes = getValidRecipes($recipes);
+echo '<pre>';
+echo print_r($validRecipes);
+echo '</pre>';
+
+
+?>
+
+
+
+
 
 <hr/>
 <a href="../index.php">index</a>
