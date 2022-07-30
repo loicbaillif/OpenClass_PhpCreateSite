@@ -50,11 +50,24 @@
 <h3>strlen(): calculate the size of a string</h3>
 
 <p>
-This sentence has <?php echo strlen($testString); ?> characters.
+<span class="code">strlen('My taylor is rich');</span><br />
+==> This sentence has <?php echo strlen($testString); ?> characters.
 </p>
 
+<hr class="lv3"/>
+<h3>str_replace(): replace all occurrences of a string by another</h3>
+<p>
+Requires 3 arguments:
+<ol>
+    <li>The string we are looking for</li>
+    <li>The string which will replace 1</li>
+    <li>The string in which we will do this replacement</li>
+</ol>
+<span class="code">str_replace(" ", "_", 'My taylor is rich');</span><br/>
+==> <?php echo str_replace(" ", "_", $testString); ?>
+</p>
 
-
+<hr class="lv3"/>
 
 <hr/>
 <a href="../index.php">index</a>
