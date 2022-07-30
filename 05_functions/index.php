@@ -41,6 +41,17 @@
 
 <hr class="subchapter"/>
 
+<h2>Handle strings with built-in functions</h2>
+<p>
+    We will work with the following sentence:<br/>
+    <em>My taylor is rich.</em>
+</p>
+<?php $testString = 'My taylor is rich.'; ?>
+<h3>strlen(): calculate the size of a string</h3>
+
+<p>
+This sentence has <?php echo strlen($testString); ?> characters.
+</p>
 
 
 
