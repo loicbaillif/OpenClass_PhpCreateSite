@@ -42,7 +42,6 @@ em {
 
 h1 {
     color: #FFFFFF;
-    counter-reset: subheading;
     margin-left: 3%;
     padding-left: 2%;
     border-left: 5px solid silver;
@@ -56,6 +55,7 @@ h2:before {
 
 h2 {
     color: #D8DECA;
+    counter-reset: subheading;
 }
 
 h3:before {
