@@ -100,6 +100,66 @@
     <li><span class="code">i</span>: minute --> <?php echo date('i'); ?></li>
 </ul>
 
+<hr class="subchapter"/>
+<h2>Create own functions</h2>
+
+<h3>First example: Check a recipe is valid</h3>
+<?php
+$recipes = [
+    [
+        'title' => 'pudding',
+        'recipe' => 'Light and typically english, a nice dessert',
+        'authorEmail' => 'user323@somemail.com',
+        'isEnabled' => true,
+    ],
+    [
+        'title' => 'pizza',
+        'recipe' => 'fresh and basic ingredients, fun to eat. Kids love it',
+        'authorEmail' => 'vivitalia@somemail.com',
+        'isEnabled' => false,
+    ],
+    [
+        'title' => 'tika masala',
+        'recipe' => 'indian-based, adopted in the UK.',
+        'authorEmail' => 'userfromuk@somemail.com',
+        'isEnabled' => true,
+    ],
+    [
+        'title' => 'pancake',
+        'recipe' => 'For top class breakfast. Flour, eggs, milk',
+        'authorEmail' => 'usadelicacies@somemail.com',
+        'isEnabled' => false,
+    ],
+    [
+        'title' => 'gazpacho',
+        'recipe' => 'All you need is tomatoes, olive oil, cucumber.',
+        'authorEmail' => 'holaespana@somemail.com',
+        'isEnabled' => true,
+    ],
+];
+
+// Define isValidRecipe() function:
+function isValidRecipe(array $recipe) : bool
+{
+    $isValid = false;
+    if (array_key_exists('isEnabled', $recipe)) {
+        $isValid = $recipe['isEnabled'];
+    }
+
+    return $isValid;
+}
+
+// Use it
+echo '<ul>';
+foreach ($recipes as $item)
+{
+    echo '<li>' . $item['title'] . ' is ' . (isValidRecipe($item)? '' : 'not ');
+    echo 'a valid recipe.</li>' . PHP_EOL;
+}
+echo '</ul>';
+?>
+
+
 <hr/>
 <a href="../index.php">index</a>
 </body>
