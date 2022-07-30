@@ -30,6 +30,19 @@
 
 <hr class="subchapter"/>
 
+<h2>PHP built-in functions</h2>
+<p>
+    List of PHP built-in functions is
+    <a href="https://www.php.net/manual/en/funcref.php">here</a>. <br/>
+    The documentation is sufficient to get the definition and some examples,
+    as well as discussions which can provide some tips. <br/>
+    It is very unlikely needed to seek for another source.
+</p>
+
+<hr class="subchapter"/>
+
+
+
 
 
 <hr/>
