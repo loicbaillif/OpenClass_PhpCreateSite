@@ -245,7 +245,7 @@ $recipes5 = [
         'title' => 'Cheesecake',
         'recipe' => 'To be done with Philadelphia cheese, nothing else',
         'author' => 'Starbucks',
-        'is_enabled' => false,
+        'is_enabled' => true,
     ],
     [
         'title' => 'Pizza',
@@ -256,16 +256,27 @@ $recipes5 = [
 ];
 ?>
 <h3>Displaying recipes</h3>
-<?php foreach ($recipes5 as $recipeTemp5) : ?>
-<?php if (array_key_exists('is_enabled', $recipeTemp5)
-    && $recipeTemp5['is_enabled']) : ?>
+<?php
+$nb_recipes = 0;
+for ($cpt = 0; $cpt < sizeof($recipes5); $cpt++) {
+    $nb_recipes += ($recipes5[$cpt]['is_enabled']);
+}
+?>
+<?php for ($cpt = 0; $cpt < sizeof($recipes5); $cpt++) : ?>
+<?php if (array_key_exists('is_enabled', $recipes5[$cpt])
+    && $recipes5[$cpt]['is_enabled']) : ?>
 <article>
-    <h4><?php echo $recipeTemp5['title']; ?></h4>
-    <div><?php echo $recipeTemp5['recipe']; ?></div>
-    <i><?php echo 'By ' . $recipeTemp5['author']; ?></i>
+    <h4><?php echo $recipes5[$cpt]['title']; ?></h4>
+    <div><?php echo $recipes5[$cpt]['recipe']; ?></div>
+    <i><?php echo 'By ' . $recipes5[$cpt]['author']; ?></i><br/>
+    <?php // Adding a separator between 2 printed recipes
+        if (($cpt + 1) < $nb_recipes) {
+            echo '______________________________';
+            }
+    ?>
 </article>
 <?php endif; ?>
-<?php endforeach; ?>
+<?php endfor; ?>
 
 
 <hr/>
