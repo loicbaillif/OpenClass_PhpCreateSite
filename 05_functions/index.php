@@ -68,6 +68,32 @@ Requires 3 arguments:
 </p>
 
 <hr class="lv3"/>
+<h3>sprintf(): format a string</h3>
+<p>
+Similar to java printf() function; <br/>
+    <ul>
+    <?php
+    $stringToFormat = 'We have %d %s in the %s';
+    $apartmentFurniture = [
+            [4, 'chairs', 'living-room'],
+            [1, 'bed', 'parental room'],
+            [3, 'wardrobes', 'dressing room'],
+    ];
+    foreach ($apartmentFurniture as $roomListing): ?>
+        <li>
+        <?php
+            echo sprintf(
+                $stringToFormat,
+                $roomListing[0],
+                $roomListing[1],
+                $roomListing[2]);
+        ?>
+    <?php endforeach; ?>
+
+</ul>
+</p>
+
+
 
 <hr/>
 <a href="../index.php">index</a>
