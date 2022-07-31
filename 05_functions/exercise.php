@@ -3,7 +3,7 @@
 $users = [
     [
         'full_name' => 'Mickaël Andrieu',
-        'email' => 'mickael.andrieu@exemple.com'
+        'email' => 'mickael.andrieu@exemple.com',
         'age' => 34,
     ],
     [
@@ -41,7 +41,7 @@ $recipes = [
         'title' => 'Salade Romaine',
         'recipe' => '',
         'author' => 'laurene.castor@exemple.com',
-        'is_enablad' => false,
+        'is_enabled' => false,
     ],
 ];
 
@@ -57,7 +57,7 @@ function display_recipe(array $recipe) : string
         $recipe_content .= '</article>';
     }
 
-    return $recipe;
+    return $recipe_content;
 }
 
 function display_author(string $authorEmail, array $users) : string
@@ -68,6 +68,7 @@ function display_author(string $authorEmail, array $users) : string
             return $author['full_name'] . '(' . $author['age'] . ' ans)';
         }
     }
+    return 'unknown user';
 }
 
 function get_recipes(array $recipes) : array
@@ -99,8 +100,7 @@ function get_recipes(array $recipes) : array
         <!-- Plus facile à lire -->
         <?php foreach(get_recipes($recipes) as $recipe) : ?>
             <article>
-                <h3><?php echo($recipe['title']); ?></h3>
-                <div><?php echo($recipe['recipe']); ?></div>
+                <div><?php echo display_recipe($recipe); ?></div>
                 <i><?php echo(display_author($recipe['author'], $users)); ?></i>
             </article>
         <?php endforeach ?>
