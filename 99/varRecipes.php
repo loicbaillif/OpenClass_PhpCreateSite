@@ -30,6 +30,18 @@ $recipes = [
         'eMail' => 'user323@somemail.com',
         'isEnabled' => true,
     ],
+    [
+        'title' => 'rougail',
+        'recipe' => 'First, fry the sausages. Then, cut the onions.',
+        'eMail' => 'creole974@somemail.com',
+        'isEnabled' => true,
+    ],
+    [
+        'title' => 'gazpacho',
+        'recipe' => 'All you need is tomatoes, olive oil, cucumber.',
+        'eMail' => 'user323@somemail.com',
+        'isEnabled' => true,
+    ],
 ];
 
 ?>

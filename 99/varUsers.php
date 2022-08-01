@@ -18,4 +18,10 @@ $users = [
         'eMail' => 'vivitalia@somemail.com',
         'age' => 27,
     ],
+    [
+        'firstName' => 'Sophie',
+        'lastName' => 'Poisson',
+        'eMail' => 'creole974@somemail.com',
+        'age' => 31,
+    ],
 ];
