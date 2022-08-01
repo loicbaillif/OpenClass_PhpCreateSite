@@ -227,7 +227,7 @@ function displayAuthor(string $authorEmail, array $users) : string
 foreach (getValidRecipes($recipes) as $recipe) :
 ?>
 <h4><?php echo $recipe['title']; ?></h4>
-<em>Par <?php echo displayAuthor($recipe['authorEmail'], $users); ?></em>
+<em>By <?php echo displayAuthor($recipe['authorEmail'], $users); ?></em>
 <?php endforeach; ?>
 
 
