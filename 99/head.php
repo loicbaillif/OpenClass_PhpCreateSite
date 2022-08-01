@@ -1,5 +1,5 @@
 <?php
-$totalChapters = 06;
+$totalChapters = 07;
 ?>
 <head>
     <meta charset="UTF-8">

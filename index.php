@@ -18,7 +18,7 @@
         <li><a href="./04/index.php">Chapter 04: Arrays</a></li>
         <li><a href="./05/index.php">Chapter 05: Functions</a></li>
         <li><a href="./06/index.php">Chapter 06: Organize page</a></li>
-        <li><a href="./07/index.php">Chapter 07:</a></li>
+        <li><a href="./07/index.php">Chapter 07: Get requests from URL</a></li>
         <li><a href="./08/index.php">Chapter 08:</a></li>
         <li><a href="./09/index.php">Chapter 09:</a></li>
         <li><a href="./10/index.php">Chapter 10:</a></li>
