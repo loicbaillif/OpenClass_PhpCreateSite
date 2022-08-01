@@ -11,15 +11,16 @@ function displayAuthor(string $authorEmail, array $users) : string
         $author = $users[$i];
         if (array_key_exists('eMail', $author))
         {
-            if ($author['eMail'] === $authorEmail)
+            if (getValueString('eMail', $author) === $authorEmail)
             {
-                $firstName = getValueString('firstName');
-                $lastName = getValueString('lastName');
-                $age = getValueInt('age');
+                $firstName = getValueString('firstName', $author);
+                $lastName = getValueString('lastName', $author);
+                $age = getValueInt('age', $author);
+                return $firstName . ' ' . $lastName . '(' . $age . ' years old)';
             }
         }
     }
-    return $firstName . ' ' . $lastName . '(' . $age . ' years old)';
+    return 'user account deleted';
 }
 
 
