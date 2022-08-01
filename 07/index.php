@@ -26,6 +26,7 @@ $mainTitle = 'Get user request from data in URL';
         <label for="lastName">Your last name</label>
         <input type="text" name="lastName" id="lastName" placeholder="Brown"/>
     </div>
+    <button type="submit">Send (nowhere)</button>
 
 </form>
 
