@@ -133,6 +133,11 @@ label {
     width: 150px;
 }
 
+button.formSubmit {
+    display: inline-block;
+    margin-left: 155px;
+}
+
 .code {
     background-color: #D8CADE;
     border-radius: 3px;
