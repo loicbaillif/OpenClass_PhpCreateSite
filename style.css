@@ -127,6 +127,12 @@ h3 {
     color: #899176;
 }
 
+label {
+    display: inline-block;
+    font-size: 110%;
+    width: 150px;
+}
+
 .code {
     background-color: #D8CADE;
     border-radius: 3px;
@@ -134,4 +140,10 @@ h3 {
     padding: 2px 6px;
     font-family: Consolas, serif;
     font-size: 90%;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #866791;
+    background: #FAB6B6;
 }
