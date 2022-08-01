@@ -3,6 +3,7 @@ body {
     background-color: #323332;
     color: #D8CADE;
     counter-reset: heading;
+    font-family: "Calibri Light";
 }
 
 hr {
@@ -22,6 +23,29 @@ hr.lv3 {
     border-width: 1px;
     margin-left: 10%;
     margin-right: 30%;
+}
+
+li.navbar > a {
+    font-family: "Calibri";
+    font-size: 120%;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li.navbar {
+    background-color: inherit;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar {
+    background-color: #FFF;
+    color: #866791;
+    height: 30px;
+    list-style-type: none;
+    padding-top: 10px;
 }
 
 /* Fonts */
