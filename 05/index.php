@@ -1,17 +1,17 @@
+<?php
+// Document variables:
+$chapter = 05;
+$pageTitle = 'Functions ';
+$mainTitle = 'Call and define functions';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Functions</title>
-</head>
+<?php include('../99/head.php'); ?>
 
 <body>
-<h1>Functions</h1>
-<hr/>
+<?php include('../99/bodyHeader.php'); ?>
 
 <h2>Call function</h2>
 <p class="code">
@@ -234,8 +234,7 @@ foreach (getValidRecipes($recipes) as $recipe) :
 
 
 
-<hr/>
-<a href="../index.php">index</a>
+<?php include('../99/bodyFooter.php'); ?>
 </body>
 
 </html>

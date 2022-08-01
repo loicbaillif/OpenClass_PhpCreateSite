@@ -8,17 +8,17 @@ $mainTitle = 'Organize page in functional blocks';
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include('../99_structure/head.php'); ?>
+<?php include('../99/head.php'); ?>
 
 <body>
-<?php include('../99_structure/bodyHeader.php'); ?>
+<?php include('../99/bodyHeader.php'); ?>
 
 
 
 
 
 
-<?php include('../99_structure/bodyFooter.php'); ?>
+<?php include('../99/bodyFooter.php'); ?>
 </body>
 
 </html>

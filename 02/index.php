@@ -1,17 +1,19 @@
+<?php
+// Document variables:
+$chapter = 02;
+$pageTitle = 'Conditions';
+$mainTitle = 'Conditions';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>Conditions</title>
-</head>
+<?php include('../99/head.php'); ?>
 
 <body>
-<h1>Conditions</h1>
-<hr />
+<?php include('../99/bodyHeader.php'); ?>
+
+
 <h2>if ... else (a.k.a. bread ... butter)</h2>
 <p>
 
@@ -102,8 +104,7 @@ echo 'You are ... ' . ($userAge >= 18 ? 'Adult' : 'Minor');
 ?>
 
 
-<hr/>
-<a href="../index.php">index</a>
+<?php include('../99/bodyFooter.php'); ?>
 </body>
 
 </html>

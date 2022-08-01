@@ -1,17 +1,19 @@
+<?php
+// Document variables:
+$chapter = 01;
+$pageTitle = 'PHP Variables';
+$mainTitle = 'PHP Variables';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
-    <title>PHP Variables</title>
-</head>
+<?php include('../99/head.php'); ?>
 
 <body>
-<h1>PHP Variables</h1>
-<hr />
+<?php include('../99/bodyHeader.php'); ?>
+
+
 <h2>Five different variables types</h2>
 <ul>
     <li>Strings: string</li>
@@ -57,8 +59,7 @@ echo "</p>";
     ?>
 </ul>
 
-<hr/>
-<a href="../index.php">index</a>
+<?php include('../99/bodyFooter.php'); ?>
 </body>
 
 </html>
