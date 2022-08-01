@@ -3,7 +3,7 @@ body {
     background-color: #323332;
     color: #D8CADE;
     counter-reset: heading;
-    font-family: "Calibri Light";
+    font-family: "Calibri Light", serif;
 }
 
 hr {
@@ -25,12 +25,41 @@ hr.lv3 {
     margin-right: 30%;
 }
 
+li.footbar > a {
+    color: #866791;
+    font-family: "Calibri", serif;
+    font-size: 110%;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li.footbar {
+    background-color: inherit;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footbar {
+    background-color: #DDD;
+    color: #866791;
+    height: 24px;
+    list-style-type: none;
+    padding-top: 5px;
+}
+
 li.navbar > a {
-    font-family: "Calibri";
+    color: #866791;
+    font-family: "Calibri", serif;
     font-size: 120%;
     padding: 12px 16px;
     text-align: center;
     text-decoration: none;
+}
+
+li.navbar > a:visited {
+    color: #866791;
 }
 
 li.navbar {
@@ -41,7 +70,7 @@ li.navbar {
 }
 
 ul.navbar {
-    background-color: #FFF;
+    background-color: #DDD;
     color: #866791;
     height: 30px;
     list-style-type: none;
@@ -96,6 +125,6 @@ h3 {
     border-radius: 3px;
     color: #323332;
     padding: 2px 6px;
-    font-family: Consolas;
+    font-family: Consolas, serif;
     font-size: 90%;
 }
