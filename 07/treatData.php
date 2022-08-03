@@ -15,6 +15,21 @@ include_once('../99/funcGlobal.php');
 <h1>Treat form</h1>
 <hr/>
 <h2>Data received:</h2>
+<?php
+if (
+    !isset($_GET['email'])
+    || !filter_var($_GET['email'], FILTER_VALIDATE_EMAIL)
+    // || !isset($_GET['firstName']) redundant, removed
+    || empty($_GET['firstName'])
+    // || !isset($_GET['lastName']) redundant, removed
+    || empty($_GET['lastName'])
+)
+{
+    echo 'required values not provided. Please check.';
+    return;
+}
+
+?>
 <ul>
     <li>Email: <?php echo getValueString('email', $_GET); ?></li>
     <li>First Name: <?php echo getValueString('firstName', $_GET); ?></li>
